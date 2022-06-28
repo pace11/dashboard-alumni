@@ -1,0 +1,9 @@
+{
+    "require": {
+        "dompdf/dompdf": "^0.8.3",
+        "ramsey/uuid": "^4.1"
+    },
+    "config": {
+        "platform-check": false
+    }
+}
