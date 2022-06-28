@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 16, 2021 at 02:47 AM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 7.4.20
+-- Host: localhost
+-- Generation Time: Jun 28, 2022 at 04:37 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -101,7 +101,8 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`id`, `name`, `username`, `password`) VALUES
-(1, 'Administrator', 'admin', 'RFhnMlRsVE94Vmkrd0JLbVZtZWtldz09');
+(1, 'Administrator', 'admin', 'RFhnMlRsVE94Vmkrd0JLbVZtZWtldz09'),
+(2, 'Guest', 'guest', 'a1lLVmxKVlllR0xBV0hJOUNUcDRvUT09');
 
 --
 -- Indexes for dumped tables
@@ -134,7 +135,7 @@ ALTER TABLE `tbl_login`
 -- AUTO_INCREMENT for table `tbl_login`
 --
 ALTER TABLE `tbl_login`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables

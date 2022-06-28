@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    # branches: [ master ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd spk-ahp-vikor/
+            cd dashboard-alumni/
             git pull origin master
-            yes | cp -rf * /home/janjikui/spk_janjiku_id
+            yes | cp -rf * /home/janjikui/dashboard_alumni
             
